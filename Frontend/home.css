@@ -1,0 +1,159 @@
+html body{
+    height: 100%;
+}
+body{
+    padding: 0%;
+    margin: 0%;
+    height: 100vh; 
+    background: linear-gradient(to bottom, #111317 14%, #1F5070 25%, #F3F4F7 43%, #F3F4F7);
+}
+
+header{
+    height: 145px; 
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-color:#111317 ;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.logo{
+    height: 60px;
+    width: 145px;
+    display: flex;
+    align-self: center;
+}
+
+.header-content{
+    align-self: center;
+    margin-top: 30px;
+    justify-items: center;
+}
+
+/*INPUT*/
+.pesquisa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+input::placeholder{
+    color: rgba(0,0,0,0,7);
+    opacity: 100;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 90%;
+}
+
+input{
+    height: 30px;
+    width: 800px;
+    background-color: rgba(121,121,121,0.5);
+    border-radius: 5px;
+    border: none;
+}
+#buscar{
+    opacity: 100;
+}
+/*FIM INPUT*/
+
+/*NAV*/
+nav{
+    display: flex;
+    justify-self: end;
+    align-items: center;
+    margin-top: 10px;
+    gap: 20px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 85%;
+
+}
+/*FIM NAV*/
+
+#menu{
+    height: 30px;
+    width: 30px; 
+    align-self: center;
+    justify-self: center;
+}
+
+.icons{
+    height: 35px;
+    width: 30px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center
+}
+
+/* INÍCIO Primeiro CARD*/
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+}
+.primeiro{
+    margin-top: 230px;
+    background-color: #D6E0EA;
+    border-radius: 10px;
+    width: 240px;
+    height: 320px
+}
+/* FIM Primeiro CARD*/
+
+.collum{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+#segundo{
+    width: 1185px;
+    height: 200px;
+    background-color: #D6E0EA;
+    border-radius: 10px;
+}
+
+.terceiro{
+    width: 240px;
+    height: 200px;
+    background-color: #D6E0EA;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.quarto{
+    width: 870px;
+    height: 200px;
+    background-color: #D6E0EA;
+    border-radius: 10px;
+    margin-top: 50px; 
+}
+
+.contain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    align-self: center;
+    gap: 75px;
+}
+
+.circle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    align-self: center;
+    gap: 75px;
+    margin-top: 75px;
+}
+.circulo{
+    background-color: #D6E0EA;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+}
