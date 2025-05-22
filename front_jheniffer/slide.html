@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/slide.css">
+</head>
+
+<style>
+  body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f0f0f0;
+  }
+
+  .container-slide {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  }
+
+  .carousel-slide {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  .btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+  }
+
+  .btn:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  #prev {
+    left: 10px;
+  }
+
+  #next {
+    right: 10px;
+  }
+</style>
+<body>
+  <div class="container-slide">
+    <div class="carousel-slide" id="slider">
+      <img class="slides" src="/EixoAuto/img/propaganda1.svg" alt="">
+      <img class="slides" src="/EixoAuto/img/propaganda2.svg" alt="">
+      <img class="slides" src="/EixoAuto/img/propaganda3.svg" alt="">
+    </div>
+    <button aria-checked="true" class="btn" id="prev">&#10094;</button>
+    <button aria-checked="undefined" class="btn" id="next">&#10095;</button>
+  </div>
+
+  <script src="/home.js"></script>
+</body>
+</html>

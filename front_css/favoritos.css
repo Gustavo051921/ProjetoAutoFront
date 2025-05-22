@@ -1,0 +1,157 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0%;
+    place-items: center;
+    margin: 0;
+}
+
+/*HEADER*/
+header {
+    height: 145px;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-color: #111317;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+#logo {
+    height: 70px;
+    width: 160px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.container {
+    width: 70%;
+    height: 100vh;
+    margin-top: 70px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.favorites-box {
+    width: 100%;
+    height: 35%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #d6e0ea;
+}
+
+.produtos {
+    width: 90%;
+    height: 50%;
+    display: flex;
+    background-size: cover;
+}
+
+p {
+    display: flex;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.content {
+    width: 90%;
+    gap: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.compras {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    filter: invert(100%);
+}
+
+/*RESPONSIVIDADE*/
+
+@media (max-width:1024px) {
+
+    .container{
+        justify-content: center;
+    }
+
+    .favorites-box{
+        width: 100%;
+        height: 30%;
+        gap: 10px;
+    }
+    .compras{
+        width: 35px;
+        height: 35px;
+    }
+    p{
+        font-size: 0.9em;
+    }
+    h1{
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .container{
+        width: 70%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .favorites-box{
+        width: 100%;
+        height: 20%;
+        gap: 10px;
+    }
+    .compras{
+        width: 30px;
+        height: 30px;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .produtos{
+        height: 100%;
+    }
+    
+}
+
+@media (max-width: 425px) {
+    .container{
+        flex-wrap: wrap;
+    }
+    .favorites-box{
+        width: 90%;
+        height: 20%;
+    }
+    p{
+        font-size: 0.8em;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .compras{
+        width: 30px;
+        height: 30px;
+    }
+    
+}

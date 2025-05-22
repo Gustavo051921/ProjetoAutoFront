@@ -1,0 +1,105 @@
+
+body{
+    width: 100%;
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;
+    justify-items: center;
+    background-color:#F3F4F7;
+}
+
+/*HEADER*/
+header{
+    height: 145px; 
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-color:#111317 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+#logo{
+    height: 70px;
+    width: 160px;
+    display: flex;
+    align-self:center;
+}
+
+/*FIM HEADER*/
+.container{
+    width: 70%;
+    height: 200px;
+    margin-top: 70px;
+    display: flex;
+    justify-self: center;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    gap: 30px;
+    border-radius: 10px;
+    background-color: #D6E0EA;
+}
+
+.products{
+    width: 25%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+p{
+    display: inline-block;
+}
+.prize{
+    width: 25%;
+    height: 25%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: aqua;
+}
+
+h1{
+    display: inline;
+    border-radius: 5px;
+}
+
+
+/*RESPONSIVIDADE*/
+
+/*@media (max-width: 1204px) {
+    .container{
+        width: 80%;
+        height: 150px;
+        justify-self: center;
+    }
+
+    .prize{
+        width: 30%;
+        height: 25%;
+    }
+}*/
+
+@media (max-width:768px) {
+    body{
+        width: 100%;
+        justify-content: center;
+
+    }
+    .container{
+        justify-self: center;
+    }
+}
+
+@media (max-width: 320px) {
+    .container{
+        height: 100px;
+    }
+}
